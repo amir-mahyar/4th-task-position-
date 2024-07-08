@@ -1,0 +1,66 @@
+.parent {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  position: relative;
+  margin: 250px auto;
+  overflow: hidden;
+  &:hover {
+    .left_top {
+      top: 0;
+      left: 0;
+      transition: 400ms;
+    }
+    .right_top {
+      top: 0;
+      right: 0;
+      transition: 500ms;
+    }
+    .right_bottom {
+      bottom: 0;
+      right: 0;
+      transition: 600ms;
+    }
+    .left_bottom {
+      bottom: 0;
+      left: 0;
+      transition: 700ms;
+    }
+  }
+  .left_top {
+    position: absolute;
+    background-color: blueviolet;
+    top: -50%;
+    left: -50%;
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+  }
+  .right_top {
+    position: absolute;
+    background-color: blue;
+    top: -50%;
+    right: -50%;
+    width: 100px;
+    height: 100px;
+    transition: 500ms;
+  }
+  .right_bottom {
+    position: absolute;
+    background-color: cyan;
+    bottom: -50%;
+    right: -50%;
+    width: 100px;
+    height: 100px;
+    transition: 600ms;
+  }
+  .left_bottom {
+    position: absolute;
+    background-color: brown;
+    bottom: -50%;
+    left: -50%;
+    width: 100px;
+    height: 100px;
+    transition: 700ms;
+  }
+}
